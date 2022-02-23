@@ -15,7 +15,7 @@ body h1 {
 }
 
 .todo__container {
-  width: 90%;
+  width: 80%;
   height: 468px;
   background-color: #fff;
   margin: 50px auto;
@@ -40,7 +40,7 @@ body h1 {
   color: #000;
 }
 .todo__container input[type=text], .todo__container input[type=date] {
-  width: 10.8rem;
+  width: 8.2rem;
   height: 2rem;
   padding-left: 0.6rem;
 }
@@ -135,9 +135,10 @@ body h1 {
   list-style: none;
   background-color: #C4E0E3;
   border-radius: 0.6rem;
-  height: 3rem;
+  height: 4rem;
   margin: 0 0.8rem 1rem 0.6rem;
   padding: 0 0.3rem;
+  font-size: 16px;
 }
 .todo__container .todo__container--listTask li p {
   width: 40%;
@@ -178,9 +179,6 @@ body h1 {
 
 .hidden {
   display: none;
-}
-.show {
-  display: block;
 }
 
 @media screen and (min-width: 768px) {
