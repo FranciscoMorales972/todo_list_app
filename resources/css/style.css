@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(#33dd, #1E1E1E);
+}
+body h1 {
+  text-align: center;
+  margin-top: 3rem;
+  color: #fff;
+}
+
+.todo__container {
+  width: 90%;
+  height: 468px;
+  background-color: #fff;
+  margin: 50px auto;
+  padding: 1rem 0.3125rem;
+  border-radius: 0.6rem;
+}
+.todo__container .todo__container-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 0.6rem;
+}
+.todo__container .todo__container-footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+.todo__container input[type=text], .todo__container input[type=date] {
+  width: 10.8rem;
+  height: 2rem;
+  padding-left: 0.6rem;
+}
+.todo__container input[type=number] {
+  width: 3rem;
+  height: 2rem;
+  padding-left: 0.6rem;
+}
+.todo__container #btnAdd {
+  border: none;
+  border-radius: 0.6rem;
+  color: #fff;
+  background-color: #33dd;
+  width: 4rem;
+  height: 2.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.todo__container #alert {
+  display: none;
+  background-color: #F7D6D9;
+  margin: 1rem 0;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #6E1B23;
+  border-radius: 0.325rem;
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.todo__container .fadeClass {
+  display: block;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+.todo__container .cantidadTask {
+  display: block;
+  color: #000;
+  font-weight: bold;
+}
+.todo__container .todo__container--listTask {
+  margin-top: 3rem;
+  overflow: hidden;
+}
+.todo__container .todo__container--listTask ul {
+  height: 250px;
+  padding: 0.5rem 0;
+  overflow-y: scroll;
+}
+.todo__container .todo__container--listTask ul::-webkit-scrollbar {
+  width: 0.3125rem;
+  height: 100%;
+  /* width of the entire scrollbar */
+}
+.todo__container .todo__container--listTask ul::-webkit-scrollbar-track {
+  background: #CECECE;
+  /* color of the tracking area */
+}
+.todo__container .todo__container--listTask ul::-webkit-scrollbar-thumb {
+  background-color: #33dd;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+}
+.todo__container .todo__container--listTask li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  background-color: #C4E0E3;
+  border-radius: 0.6rem;
+  height: 3rem;
+  margin: 0 0.8rem 1rem 0.6rem;
+  padding: 0 0.3rem;
+}
+.todo__container .todo__container--listTask li p {
+  width: 40%;
+}
+.todo__container .todo__container--listTask li .date {
+  width: 50%;
+  text-align: center;
+  font-weight: bold;
+}
+.todo__container .todo__container--listTask li .btnDelete {
+  width: 2rem;
+  height: 2rem;
+  background-color: #33dd;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.6rem;
+}
+.todo__container #btnAdd:active, .todo__container .btnDelete {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.todo__container--listTask li.critico {
+  background-color: #D85354;
+  color: #fff;
+}
+
+.todo__container--listTask li.urgente {
+  background-color: #0767B4;
+  color: #fff;
+}
+
+.todo__container--listTask li.no_urgente {
+  background-color: #1E1E1E;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .todo__container {
+    width: 40%;
+  }
+  .todo__container input[type=text], .todo__container input[type=date] {
+    width: 11.9rem;
+  }
+}

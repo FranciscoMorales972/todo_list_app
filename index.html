@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4E4EE2">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandeheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+   <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="./resources/imagenes/android-icon-96x96.png" type="image/x-icon">
+    <title>TO-DO LIST</title>
+</head>
+<body>
+    <h1>Task List</h1>
+    <div class="todo__container">
+        <div class="todo__container--actions">
+            <form id="formulario">
+                <input type="text" name="todo" id="inpTodo" placeholder="Task to be done...">
+                <input type="date" name="date" id="inpDate">
+                <button type="submit" id="btnAdd" >Add</button>
+                <span id="alert" >Todos los Campos deben de estar llenos</span>
+            </form>
+        </div>
+        <div class="todo__container--listTask">
+            <ul class="listTask--list" id="taskList">
+              
+            </ul>
+        </div>
+        <footer class="todo__container-footer">
+            <span class="cantidadTask"></span>
+            <a href="#" id="btnClear"></a>
+        </footer>
+    </div>
+    
+    <script src="./resources/js/fontAwesome.js"></script>
+    <script src="./resources/js/script.js"></script>
+    <script src="resources/js/moment.js"></script>
+</body>
+</html>
