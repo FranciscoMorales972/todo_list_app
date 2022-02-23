@@ -40,7 +40,7 @@ body h1 {
   color: #000;
 }
 .todo__container input[type=text], .todo__container input[type=date] {
-  width: 8.2rem;
+  width: 10rem;
   height: 2rem;
   padding-left: 0.6rem;
 }
