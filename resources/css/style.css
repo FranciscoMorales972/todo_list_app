@@ -139,7 +139,7 @@ body h1 {
   max-height:7rem;
   margin: 0 0.8rem 1rem 0.6rem;
   padding: 0 0.3rem;
-  font-size: 1rem;
+  font-size: 13px;
 }
 .todo__container .todo__container--listTask li p {
   width: 40%;
