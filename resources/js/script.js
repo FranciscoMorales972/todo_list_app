@@ -115,7 +115,7 @@ if ('serviceWorker' in navigator) {
             else{
               clase="no_urgente"
             }
-            taskList.innerHTML+=`<li class="listTask--list__item ${clase}" id='${index+1}' >  <p> ${item.tarea}.</p><span class="date"> <i class="fa fa-calendar"></i>  ${diasSe[date.getDay()]} ${parseInt(date.getDate()+1)} de ${mesAn[date.getMonth()]} del ${date.getFullYear()}</span><button class="btnDelete" id="btnDelete"><i class="fa fa-trash"></i></button></li>`;
+            taskList.innerHTML+=`<li class="listTask--list__item ${clase}" id='${index+1}' >  <p> ${item.tarea}.</p><span class="date"> <i class="fa fa-calendar"></i>  ${diasSe[date.getDay()]} ${parseInt(date.getDate()+1) > 31 ? 1 : parseInt(date.getDate()+1)} de ${mesAn[date.getMonth()]} del ${date.getFullYear()}</span><button class="btnDelete" id="btnDelete"><i class="fa fa-trash"></i></button></li>`;
 
             });
 
